@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadChunksFromDerived",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject"],
+      "Resource": ["arn:aws:s3:::sec-rag-ai-system/derived/*"]
+    },
+    {
+      "Sid": "WriteEmbeddingOutputsToDerived",
+      "Effect": "Allow",
+      "Action": ["s3:PutObject"],
+      "Resource": ["arn:aws:s3:::sec-rag-ai-system/derived/*"]
+    },
+    {
+      "Sid": "ListBucketOptionalForDebug",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket"],
+      "Resource": "arn:aws:s3:::sec-rag-ai-system"
+    }
+  ]
+}

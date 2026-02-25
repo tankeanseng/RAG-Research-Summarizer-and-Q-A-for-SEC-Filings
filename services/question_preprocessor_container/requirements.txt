@@ -1,0 +1,5 @@
+boto3
+openai>=1.0.0
+presidio-analyzer
+presidio-anonymizer
+numpy==1.26.4

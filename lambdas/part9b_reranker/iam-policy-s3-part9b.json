@@ -1,0 +1,32 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadInputs",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject"],
+      "Resource": [
+        "arn:aws:s3:::sec-rag-ai-system/derived/*/chunks.json",
+        "arn:aws:s3:::sec-rag-ai-system/derived/*/retrieval/queries/*",
+        "arn:aws:s3:::sec-rag-ai-system/derived/*/security/doc_injection/clean_candidates/*"
+      ]
+    },
+    {
+      "Sid": "WriteOutputs",
+      "Effect": "Allow",
+      "Action": ["s3:PutObject"],
+      "Resource": ["arn:aws:s3:::sec-rag-ai-system/derived/*/rerank/*"]
+    },
+    {
+      "Sid": "ListBucketForQueries",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket"],
+      "Resource": ["arn:aws:s3:::sec-rag-ai-system"],
+      "Condition": {
+        "StringLike": {
+          "s3:prefix": ["derived/*/retrieval/queries/*"]
+        }
+      }
+    }
+  ]
+}

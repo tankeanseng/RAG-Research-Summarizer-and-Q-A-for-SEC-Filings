@@ -1,0 +1,6 @@
+boto3
+pillow
+numpy==1.26.4
+transformers==4.56.0
+torch==2.4.1
+safetensors
