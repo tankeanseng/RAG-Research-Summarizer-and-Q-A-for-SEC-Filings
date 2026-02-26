@@ -6,7 +6,7 @@
 
 ## Part 0 — User Intake (n8n Form): Document Upload + Questions + Required Email
 
-**Live form URL:** https://n8n.srv1130258.hstgr.cloud/form/64a40c19-fbe8-4b97-a4c4-ab6c8bab91c0
+**Live Demo (n8n Form):** https://n8n.srv1130258.hstgr.cloud/form/64a40c19-fbe8-4b97-a4c4-ab6c8bab91c0
 
 The system starts with an **n8n Form Trigger**, which hosts a form page and starts the workflow when a user submits it.
 
