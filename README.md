@@ -1,3 +1,9 @@
+# SEC Filing Analyzer (RAG System)
+
+## Full Workflow Overview
+
+![Full RAG System Workflow](images/full_RAG_System_Workflow.jpg)
+
 ## Part 0 — User Intake (n8n Form): Document Upload + Questions + Required Email
 
 **Live form URL:** https://n8n.srv1130258.hstgr.cloud/form/64a40c19-fbe8-4b97-a4c4-ab6c8bab91c0
